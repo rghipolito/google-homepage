@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body,
+    input,
+    button {
+        font-size: 14px;
+        font-family: Roboto, arial, sans-serif;
+        color: #222;
+    }
+
+    button {
+        background-color: rgb(0, 153, 255);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+
+
+        justify-content: space-evenly;
+        padding: 6px;
+        height: 50px;
+        box-sizing: content-box;
+        align-content: center;
+    }
+
+    li {
+        float: left;
+    }
+
+    a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .right-block {
+        float: right;
+    }
+
+    .whole-page {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .center-fold {
+        display: flex;
+        align-content: space-around;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 462px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sign-in-button {
+        background: #2b7de9;
+        border-radius: 4px;
+        color: #fff;
+        padding: 9px 15px;
+        border: 1px solid transparent;
+        margin-left: 8px;
+
+    }
+
+    .input-buttons {
+        background-color: rgba(231, 232, 235, 0.76);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        height: 36px;
+        line-height: 27px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        color: black;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-bar {
+        background: #fff;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        box-shadow: none;
+        height: 44px;
+        width: 582px;
+        margin: 10px;
+    }
+
+    .footer {
+        margin: 0;
+        background-color: rgba(94, 88, 88, 0.158);
+        align-content: space-around;
+        justify-content: space-evenly;
+        display: flex;
+        height: 100px;
+        align-items: flex-end;
+        width: 99%;
+    }
+
+    .footer-item {
+        display: flex;
+        padding: 10px;
+        white-space: nowrap;
+        align-content: baseline;
+    }
+
+    a.footer-item {
+        color: #70757a;
+    }
+
+    .carbon-neutral {
+        order: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-grow: 2;
+    }
+
+    .special {
+        height: 50px;
+    }
+</style>
+
+<body>
+    <div class="whole-page">
+        <ul>
+            <li><a class="top-left-block" href="#">About</a></li>
+            <li><a class="top-left-block" href="#">Store</a></li>
+            <div class="right-block">
+                <li><a class="top-right-block-item" href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><button class="sign-in-button">Sign In</button></li>
+            </div>
+        </ul>
+        <div class="center-fold">
+            <img class="google" src="googlelogo_color_272x92dp.png" style="align-item: center;">
+            <input class="input-bar" type="text">
+            <div class="search">
+                <button class="input-buttons" type="submit">Google Search</button>
+                <button class="input-buttons" type="submit">I'm Feeling Lukcy</button>
+            </div>
+        </div>
+
+        <ul class="footer">
+            <li><a href="#" class="footer-item">Advertising</a></li>
+            <li><a href="#" class="footer-item">Business</a></li>
+            <li><a href="#" class="special" style="color: #70757a">How Search Works</a></li>
+            <li class="carbon-neutral footer-item"><a href="#" class="footer-item">
+                    <img src="index.png">
+                    Carbon neutral since 2007
+                </a></li>
+            <li><a href="#" class="footer-item">Privacy</a></li>
+            <li><a href="#" class="footer-item">Terms</a></li>
+            <li><a href="#" class="footer-item">Settings</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
